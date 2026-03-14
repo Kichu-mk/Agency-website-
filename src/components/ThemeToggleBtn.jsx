@@ -23,7 +23,8 @@ const ThemeToggleBtn = ({theme, setTheme}) => {
             <button>
                 {theme === 'dark' ? (
                     <img onClick={()=> setTheme('light')} src={assets.sun_icon} alt="" className='size-8.5 p-1.5 border
-                    border-gray-500 rounded-full' />
+                    border-gray-500 rounded-full hover:scale-3d duration-500 
+                        transition-all cursor-pointer' />
                 ) : (
                     <img onClick={()=> setTheme('dark')} src={assets.moon_icon} alt="" className='size-8.5 p-1.5 border
                     border-gray-500 rounded-full' />
