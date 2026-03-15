@@ -26,7 +26,7 @@ const OurWork = () => {
             <Title title='Our latest Work' desc='From strategy to execution, we craft 
             digital solutions that move your business forward.' />
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl mb-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
                 {
                     workData.map((work, index)=>(
                         <div key={index} className="hover:scale-102 duration-500 

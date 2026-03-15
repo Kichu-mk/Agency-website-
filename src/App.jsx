@@ -6,12 +6,17 @@ import Services from './components/Services';
 import OurWork from './components/OurWork';
 import Teams from './components/Teams';
 import ContactUs from './components/ContactUs';
+import { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer';
+import CursorMouse from './components/CursorMouse';
 
 const App = () => {
+
   const [theme, setTheme] = React.useState(localStorage.getItem('theme') || 'light');
 
   return (
     <div className='dark:bg-black relative'>
+      <Toaster />
       <NavBar theme={theme} setTheme={setTheme}/>
       <Hero />
       <TrustedBy />
@@ -19,6 +24,10 @@ const App = () => {
       <OurWork />
       <Teams />
       <ContactUs />
+      <Footer theme={theme}/>
+      <CursorMouse />
+
+
     </div>
   );
 }
